@@ -1,5 +1,5 @@
 {
     "require": {
-        "migli/sitemap-crawler": "^0.0.1"
+        "migliori/sitemap-crawler": "^0.0.1"
     }
 }

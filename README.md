@@ -7,7 +7,7 @@ Original project: https://github.com/ivebe/sitemap-crawler
 
 ## Install
 ```sh
-composer require migli/sitemap-crawler
+composer require migliori/sitemap-crawler
 ```
 ## Features
 - crawl given URL and generate sitemap
