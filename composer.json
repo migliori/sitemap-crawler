@@ -1,5 +1,29 @@
 {
+    "name": "migliori/sitemap-crawler",
+    "type": "library",
+    "description": "Sitemap crawler/generator. For the given URL it will return sitemap XML file with URLs and images.",
+    "keywords": ["sitemap","crawler", "generator", "ajax"],
+    "homepage": "https://github.com/migliori/sitemap-crawler",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gilles Migliori",
+            "email": "gilles.migliori@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
     "require": {
-        "migliori/sitemap-crawler": "^0.0.1"
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "SitemapCrawler\\": "src/"
+        },
+        "psr-0": {
+            "SitemapCrawler\\": "src/"
+        }
     }
 }
+
+
