@@ -1,5 +1,5 @@
 # sitemap-crawler
-Sitemap crawler/generator. For given URL it will return sitemap XML file with URLs and images.
+Sitemap crawler/generator. For the given URL it will return sitemap XML file with URLs and images.
 
 Can be used as Standalone or with Ajax (build sitemap, submit to Search Engines & show results on a button click)
 
@@ -30,9 +30,9 @@ use SitemapCrawler\Crawler;
 use SitemapCrawler\SitemapService;
 use SitemapCrawler\LinkCollection;
 
-$config = require "src/config.php";
+$config = require __DIR__ . '/vendor/ivebe/sitemap-crawler/src/config.php';
 
-$url = "http://www.google.com";
+$url = 'http://www.google.com';
 /**
  * $dest:
  *      false if you want to download the generated sitemap

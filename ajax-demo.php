@@ -15,6 +15,7 @@
 <body>
     <div class="container">
         <h1 class="text-center my-5">Sitemap Crawler - Ajax Demo</h1>
+        <p class="mb-5"><small class="gray">The Ajax crawler makes an Ajax request to <code>standalone-crawler.php</code>, which must be in the same folder<br>(or edit the Ajax request url in the js code below).</small></p>
 
         <!-- main wrapper -->
 
@@ -101,7 +102,7 @@
                 $crawlerWrapper.fadeOut().removeClass('d-none').fadeIn('slow');
 
                 var xhr     = new XMLHttpRequest();
-                xhr.open('POST', 'standalone-demo.php', true);
+                xhr.open('POST', 'standalone-crawler.php', true);
                 xhr.setRequestHeader('Cache-Control', 'no-cache');
                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                 xhr.send('ajax_enabled=true');

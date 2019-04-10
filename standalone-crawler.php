@@ -5,9 +5,9 @@ require_once __DIR__ . '/vendor/autoload.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-use SitemapCrawler\Crawler;
-use SitemapCrawler\SitemapService;
-use SitemapCrawler\LinkCollection;
+use Ivebe\SitemapCrawler\Crawler;
+use Ivebe\SitemapCrawler\SitemapService;
+use Ivebe\SitemapCrawler\LinkCollection;
 
 $config = require "src/config.php";
 
@@ -24,7 +24,7 @@ $dest = __DIR__ . '/sitemap.xml';
  */
 $sitemap_url = 'https://www.google.com/sitemap.xml';
 
-$crawler    = new Crawler($url, $config['crawler']);
+$crawler    = new Crawler($config['crawler']);
 $collection = new LinkCollection();
 $provider   = new SitemapService($crawler, $collection, $url, $config);
 

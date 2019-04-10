@@ -2,3 +2,4 @@ cgi-bin/
 vendor/
 .idea/
 sitemap.xml
+debug.log
